@@ -1,0 +1,94 @@
+@import "../../node_modules/@atg/xor-style/dist/button.scss";
+
+.xor-button {
+  font-family: $font-family;
+  font-weight: $font-weight-normal;
+  font-size: $font-size;
+  color: $grey-2;
+  border: 0;
+  cursor: pointer;
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+
+  &__primary {
+    border-radius: $border-radius-primary;
+    background-color: $primary-color;
+    box-shadow: $box-shadow-primary;
+
+    &:hover {
+      background-color: $primary-hover-color;
+      box-shadow: $box-shadow-primary;
+    }
+
+    &:active {
+      background-color: $primary-pressed-color;
+      box-shadow: none;
+    }
+
+    &:disabled {
+      background-color: $primary-disabled-background-color;
+      border: $border-disabled;
+      color: $grey-5;
+      border-radius: $border-radius-primary;
+      box-shadow: none;
+    }
+  }
+
+  &__secondary {
+    border-radius: $border-radius-secondary;
+    background-color: $secondary-color;
+    border: $border-secondary-regular;
+    color: $blue-4;
+
+    &:hover {
+      background-color: $secondary-hover-background-color;
+      border: $border-secondary-hover;
+      color: $blue-3;
+    }
+
+    &:active {
+      background-color: $secondary-pressed-color;
+      border: $border-secondary-pressed;
+      color: $blue-5;
+    }
+
+    &:disabled {
+      background-color: $secondary-disabled-background-color;
+      border: $border-disabled;
+      color: $grey-5;
+      border-radius: $border-radius-secondary;
+    }
+  }
+
+  &__small {
+    min-width: $width-small;
+    height: $height-small;
+  }
+
+  &__regular {
+    min-width: $width-regular;
+    height: $height-regular;
+  }
+
+  &__large {
+    min-width: $width-large;
+    height: $height-large;
+  }
+
+  &__IconRight {
+    margin-left: 5px;
+  }
+
+  &__IconRight,
+  &__IconLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__IconLeft {
+    margin-right: 5px;
+  }
+}

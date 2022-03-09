@@ -1,0 +1,22 @@
+.demo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    margin: 12px;
+    border: 1px solid #000;
+    h4 {
+      font-family: "Open Sans";
+      background: #06cf8b;
+      margin: 0 0 10px 0;
+      padding: 5px 10px;
+    }
+  }
+}
